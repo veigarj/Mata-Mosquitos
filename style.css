@@ -13,10 +13,11 @@
     height: 90px;
 }
 
+/*alterar lado da imagem*/
 .ladoA {
-    transform: scaleX(-1);
+    transform: scaleX(1); /*padrao*/
 }
 
 .ladoB {
-    transform: scaleX(-1);
+    transform: scaleX(-1); /*invertida*/
 }
