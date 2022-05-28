@@ -4,6 +4,8 @@ var largura = 0
 var vidas = 1
 var tempo = 15
 
+var criaMosquitoTempo = 1500
+
 // comando Search recupera tudo que esta a direita do ?
 var nivel = window.location.search
 
@@ -11,10 +13,13 @@ var nivel = window.location.search
 
 if (nivel === 'normal') {
 	//1500
+	criaMosquitoTempo = 1500
 } else if (nivel === 'dificil') {
 	//1000
-} else if (nivel === 'chucknorris' ) {
-	//75
+	criaMosquitoTempo = 1000
+} else if (nivel === 'chucknorris') {
+	//750
+	criaMosquitoTempo = 750
 }
 
 // pega a altura e largura da janela do navegador
