@@ -16,16 +16,18 @@
 
 		</div>
 
-		<div class="cronometro">Tempo restante</div>
+		<div class="cronometro">Tempo restante <span id="cronometro"></span></div>
 
-	</div>
-
+	
+</div>
 	<script>
-		posicaoRandomica()
 
-		setInterval(function() {
+		document.getElementById('cronometro').innerHTML = tempo  //introdus o conteudo dentro da Teg com Id
+
+
+		var criaMosquito = setInterval(function() {
 			posicaoRandomica()
-		},5000)
+		},2000)
 
 	</script>
 
