@@ -4,6 +4,19 @@ var largura = 0
 var vidas = 1
 var tempo = 15
 
+// comando Search recupera tudo que esta a direita do ?
+var nivel = window.location.search
+
+//usar replace('?', '') para substituir ?
+
+if (nivel === 'normal') {
+	//1500
+} else if (nivel === 'dificil') {
+	//1000
+} else if (nivel === 'chucknorris' ) {
+	//75
+}
+
 // pega a altura e largura da janela do navegador
 function ajustaTamanhoPalcoJogo() {
 	altura = window.innerHeight
